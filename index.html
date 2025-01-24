@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Designer - Luigi Incident</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+    <div id="app">
+        <nav id="mainNav">
+            <div class="project-title">Luigi Incident</div>
+            <div class="nav-controls">
+                <button id="saveProject">Save</button>
+                <button id="exportProject">Export</button>
+                <button id="toggleTheme">Theme</button>
+            </div>
+        </nav>
+        
+        <div class="main-container">
+            <div id="treeView" class="panel">
+                <!-- Dynamic Tree Structure -->
+            </div>
+            
+            <div id="contentView" class="panel">
+                <div id="sceneEditor" class="editor-panel">
+                    <!-- Scene Content -->
+                </div>
+                <div id="characterEditor" class="editor-panel">
+                    <!-- Character Content -->
+                </div>
+                <div id="dialogueEditor" class="editor-panel">
+                    <!-- Dialogue Content -->
+                </div>
+                <div id="assetManager" class="editor-panel">
+                    <!-- Asset Management -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="statusBar">
+            <span id="saveStatus"></span>
+            <span id="dbStatus"></span>
+        </div>
+    </div>
 
+    <!-- Templates -->
+    <template id="nodeTemplate">
+        <div class="tree-node">
+            <div class="node-header">
+                <span class="node-toggle">▶</span>
+                <span class="node-title"></span>
+            </div>
+            <div class="node-content"></div>
+        </div>
+    </template>
+
+    <script src="js/database.js"></script>
+    <script src="js/ui-handlers.js"></script>
+    <script src="js/asset-manager.js"></script>
+    <script src="js/exporters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
