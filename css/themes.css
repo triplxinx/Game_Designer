@@ -1,0 +1,26 @@
+/* Light Theme */
+[data-theme="light"] {
+    --primary-color: #ffffff;
+    --secondary-color: #f0f0f0;
+    --accent-color: #2980b9;
+    --text-color: #2c3e50;
+    --border-color: #bdc3c7;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #1a1a1a;
+    --secondary-color: #2d2d2d;
+    --accent-color: #3498db;
+    --text-color: #ecf0f1;
+    --border-color: #4a4a4a;
+}
+
+/* High Contrast Theme */
+[data-theme="contrast"] {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --accent-color: #00ff00;
+    --text-color: #ffffff;
+    --border-color: #00ff00;
+}
