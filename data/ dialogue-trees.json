@@ -1,0 +1,28 @@
+{
+    "hostel_scene": {
+        "clerk_female": {
+            "id": "clerk_f_dialogue",
+            "initial": "Welcome to the hostel. ID please?",
+            "responses": {
+                "show_id": {
+                    "text": "Here's my ID",
+                    "leads_to": "id_check_f"
+                },
+                "hesitate": {
+                    "text": "Uh... one moment",
+                    "leads_to": "suspicious_f"
+                }
+            }
+        },
+        "clerk_male": {
+            "id": "clerk_m_dialogue",
+            "initial": "Evening. Checking in?",
+            "responses": {
+                "show_id": {
+                    "text": "Yes, here's my ID",
+                    "leads_to": "id_check_m"
+                }
+            }
+        }
+    }
+}

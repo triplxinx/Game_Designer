@@ -1,0 +1,45 @@
+{
+    "timelines": {
+        "timelineA": {
+            "id": "success_path",
+            "title": "Successful Shot Timeline",
+            "scenes": [
+                {
+                    "id": "setup_a1",
+                    "title": "Wario's Preparation",
+                    "location": "Downtown Apartment",
+                    "time": "Early Morning",
+                    "description": "Wario gathering materials and planning the frame",
+                    "required_items": ["gun", "backpack", "fake_id"],
+                    "characters": ["wario"],
+                    "next_scenes": ["ceo_encounter_a"]
+                },
+                {
+                    "id": "ceo_encounter_a",
+                    "title": "The Shot",
+                    "location": "United Healthcare HQ",
+                    "time": "Noon",
+                    "description": "Critical moment of the shooting",
+                    "branching_paths": {
+                        "success": "chase_sequence",
+                        "failure": "escape_sequence"
+                    }
+                }
+            ]
+        },
+        "timelineB": {
+            "id": "failed_shot",
+            "title": "Failed Attempt Timeline",
+            "scenes": [
+                {
+                    "id": "setup_b1",
+                    "title": "Missed Shot",
+                    "location": "United Healthcare HQ",
+                    "time": "Noon",
+                    "description": "The shot misses, chaos ensues",
+                    "next_scenes": ["escape_b1"]
+                }
+            ]
+        }
+    }
+}

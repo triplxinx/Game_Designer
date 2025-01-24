@@ -1,0 +1,60 @@
+{
+    "playable": {
+        "wario": {
+            "id": "char_wario",
+            "name": "Wario",
+            "type": "antagonist",
+            "sprite": "wario_default.png",
+            "stats": {
+                "speed": 75,
+                "stealth": 85,
+                "deception": 90
+            },
+            "inventory": ["fake_id", "gun", "backpack"],
+            "relationships": {
+                "luigi": "nemesis",
+                "hostel_clerk": "stranger"
+            }
+        },
+        "luigi": {
+            "id": "char_luigi",
+            "name": "Luigi",
+            "type": "protagonist",
+            "sprite": "luigi_default.png",
+            "stats": {
+                "speed": 90,
+                "agility": 85,
+                "innocence": 100
+            },
+            "inventory": ["bicycle", "real_id"],
+            "relationships": {
+                "wario": "victim",
+                "police": "witness"
+            }
+        }
+    },
+    "npcs": {
+        "hostel_staff": [
+            {
+                "id": "clerk_female",
+                "name": "Sarah",
+                "role": "key_witness",
+                "dialogue_tree": "clerk_f_dialogue"
+            },
+            {
+                "id": "clerk_male",
+                "name": "Mike",
+                "role": "key_witness",
+                "dialogue_tree": "clerk_m_dialogue"
+            }
+        ],
+        "police": [
+            {
+                "id": "detective_smith",
+                "name": "Detective Smith",
+                "role": "investigator",
+                "dialogue_tree": "police_dialogue"
+            }
+        ]
+    }
+}
